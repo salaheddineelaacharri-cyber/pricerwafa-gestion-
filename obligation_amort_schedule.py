@@ -75,6 +75,47 @@ def _table_amort_doit_aligner_prix(tab: dict[str, Any]) -> bool:
     code_s = _normaliser_code(tab.get("code"))
     if code_s in ATP_SCHEDULE_REALIGN_CODES:
         return False
+    categorie = str(tab.get("categorie") or "").strip().upper()
+    s_categorie = str(tab.get("s_categorie") or "").strip().upper()
+    pr = str(tab.get("periodicite_rembou") or "").strip().upper()
+    d_valo_s = str(tab.get("date_valorisation_utilisee_iso") or "").strip()
+    d_joui_s = str(tab.get("date_jouissance_iso") or "").strip()
+    try:
+        d_valo_tab = datetime.fromisoformat(d_valo_s).date() if d_valo_s else None
+    except Exception:
+        d_valo_tab = None
+    try:
+        d_joui_tab = datetime.fromisoformat(d_joui_s).date() if d_joui_s else None
+    except Exception:
+        d_joui_tab = None
+    if (
+        categorie == "BDT"
+        and bool(tab.get("pricing_fix_bond"))
+        and not bool(tab.get("courbe_zc_active"))
+        and pr in ("FIN", "F")
+        and d_valo_tab is not None
+        and d_joui_tab is not None
+        and d_valo_tab < d_joui_tab
+        and (d_joui_tab - d_valo_tab).days > 7
+    ):
+        return False
+    if (
+        categorie == "BSF"
+        and bool(tab.get("pricing_fix_bond"))
+        and not bool(tab.get("courbe_zc_active"))
+        and pr in ("FIN", "F")
+    ):
+        d_ech_s = str(tab.get("date_echeance_ref_iso") or "").strip()
+        try:
+            d_ech_tab = datetime.fromisoformat(d_ech_s).date() if d_ech_s else None
+        except Exception:
+            d_ech_tab = None
+        if d_valo_tab is not None and d_joui_tab is not None and d_valo_tab < d_joui_tab:
+            return False
+        if d_joui_tab is not None and d_ech_tab is not None:
+            tenor_jours = max(0, (d_ech_tab - d_joui_tab).days)
+            return tenor_jours < 1000
+        return False
     if str(tab.get("categorie") or "").strip().upper() == "FPCT":
         return True
     if bool(tab.get("is_amortissable")):
@@ -83,7 +124,35 @@ def _table_amort_doit_aligner_prix(tab: dict[str, Any]) -> bool:
     # échéancier que Manar (prochain flux linéaire / ZC) — ne pas laisser l'ATP écraser.
     if bool(tab.get("pricing_rev_bond")) and bool(tab.get("courbe_zc_active")):
         return True
-    pr = str(tab.get("periodicite_rembou") or "").strip().upper()
+    if (
+        bool(tab.get("pricing_rev_bond"))
+        and not bool(tab.get("courbe_zc_active"))
+        and pr in ("FIN", "F")
+        and s_categorie == "OBLSUB"
+    ):
+        d_em_s = str(tab.get("date_emission_iso") or "").strip()
+        d_rev_s = str(tab.get("date_revision_iso") or "").strip()
+        d_ech_s = str(tab.get("date_echeance_ref_iso") or "").strip()
+        try:
+            d_em_tab = datetime.fromisoformat(d_em_s).date() if d_em_s else None
+        except Exception:
+            d_em_tab = None
+        try:
+            d_rev_tab = datetime.fromisoformat(d_rev_s).date() if d_rev_s else None
+        except Exception:
+            d_rev_tab = None
+        try:
+            d_ech_tab = datetime.fromisoformat(d_ech_s).date() if d_ech_s else None
+        except Exception:
+            d_ech_tab = None
+        revision_5ans_echeance = bool(
+            d_em_tab is not None
+            and d_rev_tab is not None
+            and d_ech_tab is not None
+            and d_rev_tab == d_ech_tab
+            and 1750 <= (d_rev_tab - d_em_tab).days <= 1900
+        )
+        return not revision_5ans_echeance
     if bool(tab.get("pricing_rev_bond")) and not bool(tab.get("courbe_zc_active")) and pr in ("FIN", "F"):
         return True
     # FIX/AA in fine (BSF type 100954) : NPV grille = référence Manar, pas le prix ATP seul.
@@ -1085,6 +1154,18 @@ def _date_echeance_depuis_ref(ref_row: pd.Series | None) -> date | None:
     return None
 
 
+def _date_revision_depuis_ref(ref_row: pd.Series | None) -> date | None:
+    if ref_row is None:
+        return None
+    for c in ref_row.index:
+        k = _norm_txt(str(c))
+        if "date" in k and "revision" in k:
+            d = _parse_date_cell(ref_row[c])
+            if d is not None and d.year >= 1990:
+                return d
+    return None
+
+
 def _date_jouissance_depuis_ref(ref_row: pd.Series | None) -> date | None:
     if ref_row is None:
         return None
@@ -1848,8 +1929,10 @@ def construire_tableau_amortissement(
     periodicite_rembou_ref = periodicite_rembou_ref
     is_amortissable_ref = bool(periodicite_rembou_ref) and periodicite_rembou_ref not in ("FIN", "F")
     base_calcul_ref = base_calcul_ref
+    date_emission_ref = _date_emission_depuis_ref(ref_row)
     methode_valo_ref = methode_valo_ref
     date_echeance_ref = _date_echeance_depuis_ref(ref_row)
+    date_revision_ref = _date_revision_depuis_ref(ref_row)
     date_jouissance_ref = _date_jouissance_depuis_ref(ref_row)
     base_rr_fix = fix_bond and ("R/R" in base_calcul_ref)
     # Référentiel METHODE_VALO : **ZC** → courbe ZC (échéancier) ; sinon → secondaire BAM (Taux AA), FIX et REV.
@@ -1968,6 +2051,14 @@ def construire_tableau_amortissement(
             and str(periodicite_rembou_ref or "").strip().upper() in ("FIN", "F")
             and "R/360" in str(base_calcul_ref or "").strip().upper()
         )
+        use_rev_oblsub_revision_5ans_echeance = bool(
+            s_categorie_ref == "OBLSUB"
+            and date_emission_ref is not None
+            and date_revision_ref is not None
+            and date_echeance_ref is not None
+            and date_revision_ref == date_echeance_ref
+            and 1750 <= (date_revision_ref - date_emission_ref).days <= 1900
+        )
         use_rev_aa_an_fin_full_residual_aa = bool(
             rev_bond
             and not use_zc_courbe
@@ -1977,6 +2068,7 @@ def construire_tableau_amortissement(
             and "R/R" in base_calcul_ref
             and categorie_ref_exacte not in ("BDT", "FPCT")
             and s_categorie_ref != "FPCTO"
+            and s_categorie_ref != "OBLSUB"
             and date_echeance_ref is not None
             and 365 < max(0, (date_echeance_ref - d_valo).days) <= 732
         )
@@ -1986,7 +2078,8 @@ def construire_tableau_amortissement(
             and str(periodicite_coupon_ref or "").strip().upper() == "AN"
             and str(periodicite_rembou_ref or "").strip().upper() in ("FIN", "F")
             and not use_rev_aa_an_fin_full_residual_aa
-            and str(code).strip() not in ("9398", "9408", "9700")
+            and not use_rev_oblsub_revision_5ans_echeance
+            and str(code).strip() not in ("9398", "9408")
         )
         use_rev_aa_an_fin_linear_first_residual_aa = bool(
             rev_bond
@@ -2617,6 +2710,13 @@ def construire_tableau_amortissement(
             and str(periodicite_rembou_ref or "").strip().upper().startswith("TRI")
             and base_rr_fix
         )
+        FIX_ZC_SEM_SEM_RR_RULE = bool(
+            fix_bond
+            and use_zc_courbe
+            and str(periodicite_coupon_ref or "").strip().upper().startswith("SEM")
+            and str(periodicite_rembou_ref or "").strip().upper().startswith("SEM")
+            and base_rr_fix
+        )
         for i, d_pay in enumerate(cols_dates):
             jours = (d_pay - d_valo).days
             j_lookup_pos = float(jours) if jours > 0 else float(max(1, abs(jours)))
@@ -2637,6 +2737,7 @@ def construire_tableau_amortissement(
                     r_sec is None
                     and (
                         FIX_ZC_TRI_TRI_RR_RULE
+                        or FIX_ZC_SEM_SEM_RR_RULE
                         or (FIX_ZC_AN_AMORT_RULE and base_rr_fix and periodicite_rembou_ref.startswith("AN"))
                     )
                     and taux_zc_schedule_a is not None
@@ -2788,6 +2889,16 @@ def construire_tableau_amortissement(
             jour_inclus = 0
             first_num = int((first_d - d_valo).days) - jour_inclus
             first_frac = 0.0 if first_den <= 0 or first_num <= 0 else float(first_num) / float(first_den)
+            if (
+                categorie_ref_exacte == "BSF"
+                and str(periodicite_coupon_ref or "").strip().upper().startswith("AN")
+                and str(periodicite_rembou_ref or "").strip().upper() in ("FIN", "F")
+                and date_echeance_ref is not None
+            ):
+                jours_residuel_fin = max(0, int((date_echeance_ref - d_valo).days))
+                if 730 < jours_residuel_fin <= 1096 and len(future_idx) >= 2:
+                    final_di = 2.0 + float(jours_residuel_fin - 730) / 366.0
+                    first_frac = max(0.0, final_di - float(len(future_idx) - 1))
             future_rank = 0
             for i in future_idx:
                 d_pay = cols_dates[i]
@@ -3201,11 +3312,16 @@ def construire_tableau_amortissement(
         "nominal_reference": float(nom),
         "spread_decimal_reference": float(spread_dec),
         "categorie": _categorie_depuis_ref(ref_row) if ref_row is not None else None,
+        "s_categorie": s_categorie_ref or None,
         "periodicite_rembou": periodicite_rembou_ref or None,
         "is_amortissable": bool(is_amortissable_ref),
         "pricing_rev_bond": _rev_actif,
         "pricing_fix_bond": bool(fix_bond),
         "date_valorisation_utilisee_iso": d_valo.isoformat(),
+        "date_emission_iso": date_emission_ref.isoformat() if isinstance(date_emission_ref, date) else None,
+        "date_revision_iso": date_revision_ref.isoformat() if isinstance(date_revision_ref, date) else None,
+        "date_echeance_ref_iso": date_echeance_ref.isoformat() if isinstance(date_echeance_ref, date) else None,
+        "date_jouissance_iso": date_jouissance_ref.isoformat() if isinstance(date_jouissance_ref, date) else None,
         "debug_rev": debug_rev,
         "methode_valo": methode_valo_ref or None,
         "courbe_zc_active": bool(use_zc_courbe),
