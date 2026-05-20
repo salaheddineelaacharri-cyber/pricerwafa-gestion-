@@ -1,0 +1,817 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\geometry{margin=2.3cm}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\title{Documentation pédagogique du module de valorisation obligataire}
+\author{Pricer Wafa Gestion}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objectif du document}
+
+Ce document explique, de manière pédagogique et professionnelle, comment le module de valorisation obligataire calcule les prix et les principaux indicateurs financiers. L'objectif est de présenter la logique métier et les formules financières utilisées, sans entrer dans les détails d'affichage, de virgules ou d'arrondis techniques.
+
+L'application valorise les obligations à partir de données chargées depuis SQL Server, principalement depuis les tables suivantes :
+
+\begin{itemize}
+    \item \texttt{dbo.referentiel\_titre} : caractéristiques des titres ;
+    \item \texttt{dbo.echeancier\_titre} : échéanciers de flux, coupons, amortissements et dates de tombée ;
+    \item \texttt{dbo.histo\_courbe\_taux} : points de courbe BAM utilisés pour l'actualisation.
+\end{itemize}
+
+Les formules présentées ci-dessous correspondent aux traitements réellement identifiés dans le code, notamment dans les modules \texttt{yield\_curve.py}, \texttt{valuation\_zc\_obligations.py}, \texttt{obligation\_amort\_schedule.py}, \texttt{pricing/data\_access.py} et \texttt{backend/main.py}.
+
+\section{Calcul des tableaux de courbe affichés au début}
+
+Avant de valoriser les obligations, l'application construit deux tableaux de courbe visibles dans l'interface :
+
+\begin{itemize}
+    \item le tableau \textbf{Comparaison interpolation BAM} ;
+    \item le tableau \textbf{Échéancier annuel (ZC)}.
+\end{itemize}
+
+Ces deux tableaux ne sont pas seulement des éléments d'affichage. Ils servent à expliquer et contrôler la courbe utilisée par le moteur de valorisation. Ils permettent au jury de vérifier que les taux de marché issus de SQL Server sont bien repris, triés, interpolés si nécessaire, puis transformés en taux utilisables pour l'actualisation des flux obligataires.
+
+\subsection{Tableau Comparaison interpolation BAM}
+
+Le tableau \textbf{Comparaison interpolation BAM} part des points réels de marché chargés depuis \texttt{dbo.histo\_courbe\_taux}. Ces points sont les maturités BAM disponibles pour une date donnée. Elles peuvent changer d'un jour à l'autre.
+
+Exemple :
+
+\[
+1,\ 13,\ 167,\ 286,\ 314,\ 504,\ 1442,\ldots
+\]
+
+ou bien :
+
+\[
+1,\ 60,\ 151,\ 179,\ 328,\ 361,\ 1488,\ldots
+\]
+
+Le principe est le suivant :
+
+\begin{enumerate}
+    \item récupérer les maturités et les taux depuis SQL Server ;
+    \item trier les maturités par ordre croissant ;
+    \item séparer dynamiquement les points court terme et long terme ;
+    \item conserver les taux exacts de la base ;
+    \item interpoler seulement lorsqu'une maturité calculée ne correspond pas exactement à un pilier disponible.
+\end{enumerate}
+
+La séparation court terme / long terme utilisée dans l'application est :
+
+\[
+\text{CT} : K \leq 365 \text{ jours}
+\]
+
+\[
+\text{LT} : K > 365 \text{ jours}
+\]
+
+où $K$ représente la maturité en jours.
+
+\subsubsection*{Interpolation linéaire}
+
+Lorsque le moteur a besoin d'un taux pour une maturité $K$ située entre deux piliers connus $K_1$ et $K_2$, il applique une interpolation linéaire :
+
+\[
+r(K)
+=
+r_1
++
+\frac{r_2-r_1}{K_2-K_1}
+\times
+(K-K_1)
+\]
+
+où :
+
+\begin{itemize}
+    \item $K_1$ et $K_2$ sont les deux maturités encadrantes ;
+    \item $r_1$ et $r_2$ sont les taux BAM associés ;
+    \item $r(K)$ est le taux interpolé à la maturité recherchée.
+\end{itemize}
+
+Cette interpolation est volontairement simple et transparente. Elle permet de garder la structure de la courbe observée sans inventer un modèle complexe non présent dans le code.
+
+\subsubsection*{Formule du taux secondaire BAM}
+
+Le tableau de comparaison utilise la logique du taux secondaire interpolé BAM. Elle est implémentée dans \texttt{pricing/curves/zc\_interpolation\_excel.py}, fonction \texttt{taux\_secondaire\_interpole\_formule\_b}.
+
+La formule appliquée est :
+
+\[
+r_{\text{sec}}(K)
+=
+\begin{cases}
+\text{Interpolation CT}(K), & K < 365 \\
+\text{Interpolation LT}(K), & K \geq 365
+\end{cases}
+\]
+
+Le seuil de 365 jours sépare la partie monétaire court terme de la partie actuarielle long terme. Cette règle est importante, car les taux courts BAM sont exprimés en logique monétaire, alors que les taux longs sont utilisés comme taux actuariels.
+
+\subsubsection*{Pourquoi ce tableau est utile}
+
+Ce tableau sert à contrôler la cohérence entre :
+
+\begin{itemize}
+    \item les taux directement observés en base ;
+    \item les maturités utilisées par le moteur ;
+    \item les taux interpolés lorsque la maturité exacte n'existe pas dans SQL Server.
+\end{itemize}
+
+Il permet donc de justifier devant le jury que la valorisation ne repose pas sur des maturités fixes hardcodées, mais sur les points BAM réellement disponibles pour la date sélectionnée.
+
+\subsection{Tableau Échéancier annuel (ZC)}
+
+Le tableau \textbf{Échéancier annuel (ZC)} construit une courbe zéro-coupon exploitable pour l'actualisation. Il transforme les taux de marché en taux zéro-coupon et en facteurs d'actualisation.
+
+Ce tableau est utile pour les obligations dont la méthode de valorisation utilise la courbe zéro-coupon, notamment lorsque le référentiel indique \texttt{METHODE\_VALO = ZC}.
+
+\subsubsection*{Maturités utilisées}
+
+Le tableau ZC est construit sur une grille annuelle et infra-annuelle utilisée par le backend. Cette grille sert à produire les colonnes :
+
+\begin{itemize}
+    \item \textbf{Maturité} : maturité en jours ;
+    \item \textbf{Taux} : taux de marché associé à la maturité ;
+    \item \textbf{Année} : maturité exprimée en années ;
+    \item \textbf{TauxZC} : taux zéro-coupon calculé ;
+    \item \textbf{PXZC} : facteur d'actualisation zéro-coupon ;
+    \item \textbf{TauxZCActuariel} : taux zéro-coupon actuariel utilisé pour la valorisation.
+\end{itemize}
+
+La colonne \textbf{Année} est calculée ainsi :
+
+\[
+T =
+\begin{cases}
+\frac{M}{365}, & M < 365 \\
+\text{arrondi}\left(\frac{M}{365}\right), & M \geq 365
+\end{cases}
+\]
+
+où $M$ est la maturité en jours.
+
+\subsubsection*{Conversion court terme}
+
+Pour les maturités inférieures à un an, le taux de marché est un taux monétaire. Il est converti en taux actuariel afin d'être cohérent avec l'actualisation en puissance :
+
+\[
+z_{\text{act}}(M)
+=
+\left(1 + B \times \frac{M}{360}\right)^{365/M} - 1
+\]
+
+où :
+
+\begin{itemize}
+    \item $B$ est le taux de marché court terme ;
+    \item $M$ est la maturité en jours ;
+    \item $z_{\text{act}}(M)$ est le taux actuariel équivalent.
+\end{itemize}
+
+Cette formule est nécessaire parce qu'un taux monétaire ACT/360 et un taux actuariel annuel ne sont pas directement comparables.
+
+\subsubsection*{Bootstrap zéro-coupon au-delà d'un an}
+
+Pour les maturités supérieures à un an, le code construit un taux zéro-coupon par bootstrap. L'idée est de déduire le taux zéro-coupon $z$ qui rend cohérent le prix d'une obligation théorique avec les taux de marché.
+
+La formule utilisée dans le backend est :
+
+\[
+z
+=
+\left(
+\frac{1+B}{1-B \times S}
+\right)^{1/T}
+- 1
+\]
+
+avec :
+
+\begin{itemize}
+    \item $B$ : taux de marché de la maturité considérée ;
+    \item $T$ : maturité en années ;
+    \item $S$ : somme des facteurs d'actualisation zéro-coupon déjà calculés sur les maturités précédentes.
+\end{itemize}
+
+Une fois $z$ calculé, le facteur d'actualisation zéro-coupon est :
+
+\[
+PXZC
+=
+\frac{1}{(1+z)^T}
+\]
+
+\subsubsection*{Pourquoi ce tableau est utile}
+
+Le tableau ZC sert à transformer une courbe de taux de marché en une courbe directement utilisable pour actualiser des flux. Il permet de passer d'une logique de taux observés à une logique de facteurs d'actualisation.
+
+Il est particulièrement important pour les titres valorisés en méthode ZC, car chaque flux futur peut être actualisé avec un taux zéro-coupon correspondant à sa maturité.
+
+\subsection{Lien entre les deux tableaux}
+
+Les deux tableaux sont complémentaires :
+
+\begin{itemize}
+    \item le tableau \textbf{Comparaison interpolation BAM} explique comment le taux secondaire est obtenu à partir des points BAM réels ;
+    \item le tableau \textbf{Échéancier annuel (ZC)} explique comment ces taux sont transformés en taux zéro-coupon et en facteurs d'actualisation.
+\end{itemize}
+
+En résumé, le premier tableau contrôle la qualité de l'interpolation de marché, tandis que le second prépare la courbe d'actualisation utilisée dans les valorisations ZC.
+
+\section{Types d'obligations traités}
+
+\subsection{Obligation à taux fixe}
+
+Une obligation à taux fixe verse des coupons calculés à partir d'un taux facial connu à l'avance. Dans le code, ce type est notamment détecté lorsque le référentiel indique \texttt{TYPE\_TAUX = FIX}. Le coupon est alors déterminé à partir du nominal, du taux facial et de la périodicité.
+
+La valorisation consiste à actualiser les flux futurs : coupons et remboursement du capital. Pour certains titres à taux fixe valorisés sur la courbe secondaire BAM, le code applique une règle métier : un taux d'actualisation unique peut être utilisé, basé sur le taux de la dernière tombée future augmenté du spread.
+
+\subsection{Obligation à taux variable ou révisable}
+
+Une obligation à taux variable ou révisable est détectée lorsque le référentiel indique \texttt{TYPE\_TAUX = REV}. Le code traite alors le prochain flux de révision et le capital restant selon les règles de l'échéancier.
+
+La logique implémentée n'est pas une simulation de taux futurs. Le module utilise une approche déterministe : il récupère la courbe disponible, identifie la prochaine date de révision ou les flux futurs utiles, puis applique un taux de courbe augmenté de la prime de risque.
+
+Selon la méthode de valorisation du titre :
+
+\begin{itemize}
+    \item si \texttt{METHODE\_VALO = AA} ou \texttt{MN}, la courbe utilisée est la courbe secondaire BAM ;
+    \item si \texttt{METHODE\_VALO = ZC}, la courbe utilisée est la courbe zéro-coupon construite par le module.
+\end{itemize}
+
+\subsection{Obligation amortissable}
+
+Une obligation amortissable rembourse progressivement son capital. Le code s'appuie sur \texttt{dbo.echeancier\_titre} pour connaître les dates de tombée, les amortissements, les intérêts, le capital restant et les flux.
+
+Pour chaque date future, le flux est généralement :
+
+\[
+F_i = I_i + A_i
+\]
+
+où :
+
+\begin{itemize}
+    \item $F_i$ est le flux total à la date $i$ ;
+    \item $I_i$ est l'intérêt de la période ;
+    \item $A_i$ est l'amortissement du capital.
+\end{itemize}
+
+Le prix clean affiché par le module pour un échéancier amortissable correspond à la somme des flux futurs actualisés.
+
+\subsection{Obligation in fine}
+
+Une obligation in fine rembourse le capital principalement à l'échéance finale. Dans le référentiel, ce cas est notamment reconnu via la périodicité de remboursement, par exemple \texttt{PERIODICITE\_REMBOU = FIN} ou une variante équivalente.
+
+Les coupons sont versés pendant la vie du titre, puis le capital est remboursé au dernier flux. La formule générale reste une actualisation des flux futurs, mais la structure des flux est différente : l'amortissement du capital est concentré à la fin.
+
+\subsection{Obligation zéro-coupon}
+
+Le code contient une construction et une interpolation de courbe zéro-coupon. Il contient aussi un routage de valorisation lorsque \texttt{METHODE\_VALO} contient \texttt{ZC}. Cela signifie que la courbe d'actualisation utilisée peut être une courbe zéro-coupon.
+
+En revanche, le code ne met pas en évidence un produit séparé nommé explicitement ``obligation zéro-coupon'' avec un workflow indépendant. Si un titre ne verse pas de coupon dans les données, il peut être valorisé comme un flux principal unique, mais la documentation doit distinguer :
+
+\begin{itemize}
+    \item la courbe zéro-coupon utilisée pour actualiser ;
+    \item l'obligation zéro-coupon comme instrument sans coupon explicite.
+\end{itemize}
+
+\section{Notions financières utilisées}
+
+\subsection{Nominal}
+
+Le nominal est le montant de référence de l'obligation. Il sert à calculer les coupons et le capital à rembourser.
+
+\[
+\text{Coupon annuel théorique} = \text{Nominal} \times \text{Taux facial}
+\]
+
+\subsection{Coupon et taux facial}
+
+Le taux facial est le taux contractuel de l'obligation. Pour une obligation à taux fixe, il permet de calculer les intérêts dus à chaque période.
+
+Avec une fréquence de paiement $m$ par an, le coupon périodique théorique est :
+
+\[
+C = \frac{N \times c}{m}
+\]
+
+où :
+
+\begin{itemize}
+    \item $N$ est le nominal ;
+    \item $c$ est le taux facial annuel ;
+    \item $m$ est la fréquence de coupon.
+\end{itemize}
+
+Dans les échéanciers SQL, si le coupon ou l'intérêt est déjà fourni, le module peut utiliser directement les montants présents dans l'échéancier afin d'éviter de reconstruire une information déjà calculée.
+
+\subsection{Date de valorisation}
+
+La date de valorisation est la date à laquelle le prix du titre est calculé. Seuls les flux strictement futurs par rapport à cette date sont pris en compte dans l'actualisation.
+
+\[
+t_i = \frac{\text{Date flux}_i - \text{Date valorisation}}{365}
+\]
+
+\subsection{Date d'échéance et maturité résiduelle}
+
+La date d'échéance est la dernière date de remboursement du titre. La maturité résiduelle est le temps restant entre la date de valorisation et cette échéance.
+
+\[
+\text{Maturité résiduelle en jours} =
+\text{Date échéance} - \text{Date valorisation}
+\]
+
+\subsection{Flux futurs}
+
+Les flux futurs représentent les montants que l'investisseur doit recevoir après la date de valorisation. Ils peuvent inclure :
+
+\begin{itemize}
+    \item des coupons ;
+    \item des amortissements de capital ;
+    \item le remboursement final du nominal ;
+    \item dans le cas révisable, le prochain flux et le capital restant selon la règle de révision.
+\end{itemize}
+
+\subsection{Capital restant dû}
+
+Le capital restant dû est le capital qui n'a pas encore été amorti. Pour une obligation amortissable, il diminue au fil des échéances.
+
+\[
+CRD_i = CRD_{i-1} - A_i
+\]
+
+où $A_i$ est l'amortissement du capital à la date $i$.
+
+\subsection{Courbe des taux}
+
+La courbe des taux donne un taux de marché pour plusieurs maturités. Dans l'application, les points BAM proviennent de \texttt{dbo.histo\_courbe\_taux}. Le frontend affiche les maturités réelles disponibles en base, et le backend les trie par maturité croissante.
+
+Les points court terme et long terme sont séparés dynamiquement :
+
+\[
+\text{Court terme} \leq 365 \text{ jours}
+\]
+
+\[
+\text{Long terme} > 365 \text{ jours}
+\]
+
+Les taux exacts de la base sont conservés. L'interpolation n'intervient que lorsqu'il faut valoriser un flux dont la maturité ne correspond pas exactement à un pilier disponible.
+
+\subsection{Taux d'actualisation et spread}
+
+Le taux d'actualisation utilisé pour un flux est généralement construit comme :
+
+\[
+r_i = r_{\text{courbe}}(t_i) + s
+\]
+
+où :
+
+\begin{itemize}
+    \item $r_{\text{courbe}}(t_i)$ est le taux de courbe interpolé à la maturité du flux ;
+    \item $s$ est la prime de risque ou spread d'émission.
+\end{itemize}
+
+Dans le code, cette logique est visible dans la fonction \texttt{taux\_actu\_decimal\_secondaire\_plus\_spread}.
+
+\subsection{Prix dirty, prix clean et coupon couru}
+
+Le prix dirty est la valeur économique complète du titre, coupon couru inclus. Le prix clean est le prix hors coupon couru.
+
+\[
+P_{\text{dirty}} = P_{\text{clean}} + CC
+\]
+
+donc :
+
+\[
+P_{\text{clean}} = P_{\text{dirty}} - CC
+\]
+
+où $CC$ est le coupon couru.
+
+Dans les échéanciers amortissables du module, la somme des flux actualisés représente le prix clean, et le prix dirty est obtenu en ajoutant le coupon couru.
+
+\section{Construction de la courbe et interpolation}
+
+\subsection{Courbe court terme : taux monétaires}
+
+Pour les maturités court terme, les taux sont considérés comme des taux monétaires en base ACT/360. Lorsque le module doit les convertir en taux actuariels annuels, il utilise la relation :
+
+\[
+1 + r_{MM} \times \frac{d}{360}
+=
+(1 + r_{act})^{d/365}
+\]
+
+d'où :
+
+\[
+r_{act}(d)
+=
+\left(1 + r_{MM} \times \frac{d}{360}\right)^{365/d} - 1
+\]
+
+Cette formule apparaît dans \texttt{yield\_curve.py}, notamment dans la fonction \texttt{convert\_to\_actuarial}.
+
+\subsection{Courbe long terme : taux actuariels}
+
+Pour les maturités long terme, les taux sont traités comme des taux actuariels. L'actualisation d'un flux à $d$ jours utilise :
+
+\[
+DF(d) = (1+r)^{-d/365}
+\]
+
+où $DF(d)$ est le facteur d'actualisation.
+
+\subsection{Taux secondaire BAM}
+
+Le module utilise une fonction d'interpolation alignée avec la logique Excel/VBA existante. Pour le taux secondaire :
+
+\[
+r_{\text{sec}}(K) =
+\begin{cases}
+\text{Interpolation CT}(K), & K < 365 \\
+\text{Interpolation LT}(K), & K \geq 365
+\end{cases}
+\]
+
+Ce comportement correspond à la fonction \texttt{taux\_secondaire\_interpole\_formule\_b}.
+
+\subsection{Courbe zéro-coupon}
+
+Le backend construit aussi un échéancier annuel zéro-coupon. La formule de conversion court terme est :
+
+\[
+z_{act}(M)
+=
+\left(1 + B \times \frac{M}{360}\right)^{365/M} - 1
+\]
+
+Pour les maturités supérieures à un an, le code utilise une logique de bootstrap. Si $B$ est le taux marché de la ligne, $T$ la maturité en années et $S$ la somme des facteurs d'actualisation précédents, alors :
+
+\[
+z =
+\left(
+\frac{1+B}{1-B \times S}
+\right)^{1/T}
+- 1
+\]
+
+Le facteur zéro-coupon associé est :
+
+\[
+PXZC = \frac{1}{(1+z)^T}
+\]
+
+Cette partie est implémentée dans \texttt{backend/main.py}, dans la construction de l'échéancier annuel ZC.
+
+\section{Valorisation des flux}
+
+\subsection{Formule générale d'actualisation}
+
+La formule centrale du module est l'actualisation des flux futurs :
+
+\[
+PV_i = \frac{F_i}{(1+r_i)^{t_i}}
+\]
+
+avec :
+
+\begin{itemize}
+    \item $PV_i$ : valeur actuelle du flux $i$ ;
+    \item $F_i$ : flux futur ;
+    \item $r_i$ : taux d'actualisation appliqué au flux ;
+    \item $t_i$ : durée en années entre la date de valorisation et la date du flux.
+\end{itemize}
+
+Le prix dirty théorique d'une obligation est :
+
+\[
+P_{\text{dirty}} = \sum_{i=1}^{n} PV_i
+\]
+
+Dans les tableaux d'amortissement de l'application, la somme des flux actualisés est utilisée comme prix clean, puis le coupon couru est ajouté pour obtenir le prix dirty :
+
+\[
+P_{\text{clean}} = \sum_{i=1}^{n} PV_i
+\]
+
+\[
+P_{\text{dirty}} = P_{\text{clean}} + CC
+\]
+
+\subsection{Valorisation d'une obligation à taux fixe}
+
+Pour une obligation à taux fixe, les flux futurs sont composés de coupons fixes et du remboursement du capital.
+
+Pour une obligation in fine :
+
+\[
+F_i =
+\begin{cases}
+C_i, & i < n \\
+C_n + N, & i = n
+\end{cases}
+\]
+
+Le prix est :
+
+\[
+P = \sum_{i=1}^{n}
+\frac{F_i}{(1+r_i)^{t_i}}
+\]
+
+Dans le code, cette logique générale est présente dans \texttt{prix\_obligation\_courbe\_zc} et dans la construction des tableaux d'amortissement.
+
+\subsection{Valorisation d'une obligation à taux variable}
+
+Pour une obligation révisable, le code ne projette pas une trajectoire aléatoire de taux futurs. Il utilise les règles de l'échéancier et la prochaine date pertinente de révision.
+
+La logique financière peut être résumée ainsi :
+
+\[
+r_{\text{variable}} = r_{\text{référence}} + \text{marge}
+\]
+
+Puis le flux ou le couple flux plus capital restant est actualisé avec le taux d'actualisation correspondant :
+
+\[
+P_{\text{REV}}
+=
+\frac{F_{\text{prochain}} + CRD_{\text{prochain}}}
+{(1+r)^{t}}
+\]
+
+ou, dans certains cas révisables court terme en convention monétaire :
+
+\[
+P_{\text{REV}}
+=
+\frac{F_{\text{prochain}} + CRD_{\text{prochain}}}
+{1+r \times \frac{d}{360}}
+\]
+
+Ces règles sont visibles dans \texttt{obligation\_amort\_schedule.py}, qui distingue les cas \texttt{REV}, \texttt{AA}, \texttt{ZC}, les périodicités et les bases de calcul.
+
+\subsection{Valorisation avec amortissement du capital}
+
+Pour une obligation amortissable, chaque date de tombée peut contenir une partie intérêt et une partie remboursement de capital.
+
+\[
+F_i = I_i + A_i
+\]
+
+\[
+CRD_i = CRD_{i-1} - A_i
+\]
+
+Le prix clean est la somme des flux futurs actualisés :
+
+\[
+P_{\text{clean}}
+=
+\sum_{i=1}^{n}
+\frac{I_i + A_i}{(1+r_i)^{t_i}}
+\]
+
+Le prix dirty est ensuite :
+
+\[
+P_{\text{dirty}} = P_{\text{clean}} + CC
+\]
+
+\section{Coupon couru}
+
+Le coupon couru représente la partie du coupon déjà acquise entre la dernière date de coupon et la date de valorisation.
+
+La formule générale est :
+
+\[
+CC = C \times
+\frac{\text{Date valorisation} - \text{Date dernier coupon}}
+{\text{Date prochain coupon} - \text{Date dernier coupon}}
+\]
+
+Dans le module, le coupon couru est calculé à partir de l'échéancier lorsqu'il existe. Il sert à passer du prix clean au prix dirty.
+
+\section{Rendement actuariel et indicateurs de risque}
+
+\subsection{Rendement actuariel ou Yield to Maturity}
+
+Le rendement actuariel, ou YTM, est le taux unique qui permet de retrouver le prix du titre par actualisation de tous les flux futurs.
+
+\[
+P =
+\sum_{i=1}^{n}
+\frac{F_i}{(1+y)^{t_i}}
+\]
+
+Le code résout cette équation numériquement par dichotomie. Cette méthode apparaît dans \texttt{\_ytm\_bisection} et dans les fonctions de calcul associées aux tableaux d'amortissement.
+
+\subsection{Duration de Macaulay}
+
+La duration de Macaulay mesure la durée moyenne pondérée des flux, les poids étant les valeurs actuelles des flux.
+
+\[
+D_M =
+\frac{
+\sum_{i=1}^{n} t_i \times PV_i
+}{
+\sum_{i=1}^{n} PV_i
+}
+\]
+
+Elle s'exprime en années. Elle est calculée dans le code à partir des flux actualisés.
+
+\subsection{Duration modifiée}
+
+La duration modifiée mesure la sensibilité du prix à une variation du taux de rendement.
+
+\[
+D_{\text{mod}} =
+\frac{D_M}{1+y}
+\]
+
+où $y$ est le rendement actuariel.
+
+\subsection{Sensibilité}
+
+Dans l'interface, la sensibilité est alignée sur la duration modifiée :
+
+\[
+\text{Sensibilité} \approx D_{\text{mod}}
+\]
+
+En interprétation financière, pour une petite variation de taux $\Delta y$, la variation relative du prix est approximativement :
+
+\[
+\frac{\Delta P}{P}
+\approx
+-D_{\text{mod}} \times \Delta y
+\]
+
+Le signe négatif exprime la relation inverse entre prix obligataire et taux d'intérêt.
+
+\subsection{Convexité}
+
+La convexité complète la duration en tenant compte de la courbure de la relation prix-taux. Le code calcule une convexité à partir des flux, des temps et du YTM :
+
+\[
+Conv =
+\frac{
+\sum_{i=1}^{n}
+t_i(t_i+1)
+\frac{F_i}{(1+y)^{t_i+2}}
+}{
+P
+}
+\]
+
+Elle permet d'améliorer l'approximation de variation du prix lorsque les mouvements de taux sont plus importants.
+
+\section{Différences importantes à expliquer au jury}
+
+\subsection{Taux fixe vs taux variable}
+
+Une obligation à taux fixe a un coupon déterminé dès l'émission. La principale incertitude de valorisation vient donc de la courbe d'actualisation et du spread.
+
+Une obligation à taux variable ou révisable a un coupon qui dépend d'une référence de marché et d'une marge. Dans l'application, la valorisation est déterministe : elle applique les règles de révision présentes dans les données et les taux disponibles dans la courbe.
+
+\subsection{Amortissable vs in fine}
+
+Une obligation amortissable rembourse son capital progressivement. Le prix dépend donc d'une série de flux incluant amortissements et coupons.
+
+Une obligation in fine rembourse le capital à la dernière échéance. Les flux intermédiaires sont principalement des coupons, puis le dernier flux inclut le capital.
+
+\subsection{Prix clean vs prix dirty}
+
+Le prix clean exclut le coupon couru. C'est le prix le plus souvent utilisé pour comparer les obligations sur le marché.
+
+Le prix dirty inclut le coupon couru. C'est le montant économique total à payer lors du règlement :
+
+\[
+P_{\text{dirty}} = P_{\text{clean}} + CC
+\]
+
+\subsection{Coupon couru vs coupon plein}
+
+Le coupon plein est le coupon total d'une période complète. Le coupon couru est seulement la partie déjà acquise à la date de valorisation.
+
+\[
+CC = \text{Coupon plein} \times \text{fraction de période écoulée}
+\]
+
+\subsection{Duration vs maturité}
+
+La maturité est le temps jusqu'à l'échéance finale du titre. Elle ne tient pas compte de la répartition des flux.
+
+La duration tient compte du calendrier complet des flux. Pour une obligation amortissable, la duration est souvent inférieure à la maturité, car une partie du capital est récupérée avant la date finale.
+
+\section{Lien avec l'application}
+
+\subsection{Architecture de données SQL}
+
+Le chargement des données métier est centralisé dans \texttt{pricing/data\_access.py}. La connexion runtime utilise \texttt{pyodbc}. En cas d'indisponibilité SQL Server, le code lève une erreur explicite \texttt{SqlDataAccessError}, qui est ensuite transformée côté API en message clair pour l'utilisateur.
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Table SQL & Rôle métier & Utilisation dans le pricing \\
+\midrule
+\texttt{dbo.referentiel\_titre} & Caractéristiques titre & nominal, coupon, spread, type de taux, méthode de valo \\
+\texttt{dbo.echeancier\_titre} & Flux de paiement & dates, intérêts, amortissements, capital restant, flux \\
+\texttt{dbo.histo\_courbe\_taux} & Courbe BAM & points de maturité et taux pour actualiser les flux \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Étapes de calcul dans l'application}
+
+Le processus de valorisation peut être résumé en six étapes :
+
+\begin{enumerate}
+    \item L'utilisateur choisit une date de valorisation et éventuellement un code Maroclear.
+    \item Le backend charge les titres depuis \texttt{dbo.referentiel\_titre}.
+    \item Le backend charge les échéanciers depuis \texttt{dbo.echeancier\_titre}.
+    \item Le backend charge les points de courbe depuis \texttt{dbo.histo\_courbe\_taux} pour la date demandée.
+    \item Les flux futurs sont identifiés, puis actualisés avec le taux de courbe adapté à chaque maturité et le spread du titre.
+    \item Le module retourne au frontend le prix, le coupon couru, le rendement, la duration, la sensibilité, la convexité et, si disponible, le tableau d'amortissement.
+\end{enumerate}
+
+\subsection{Gestion des erreurs métier}
+
+Le frontend et le backend arrêtent le calcul lorsque les données nécessaires ne sont pas disponibles. Deux cas importants sont traités :
+
+\begin{itemize}
+    \item si la date sélectionnée n'existe pas dans \texttt{dbo.histo\_courbe\_taux}, l'application indique qu'aucun taux BAM n'est disponible pour ce jour ;
+    \item si le code Maroclear saisi n'existe pas dans \texttt{dbo.referentiel\_titre}, l'application indique que le code n'existe pas dans la base.
+\end{itemize}
+
+Cette logique évite de valoriser un titre avec une courbe d'un autre jour ou avec un code inexistant.
+
+\section{Ce qui est réellement implémenté}
+
+Après inspection du code, les éléments suivants sont effectivement présents :
+
+\begin{itemize}
+    \item chargement SQL centralisé avec \texttt{pyodbc} ;
+    \item récupération des points BAM depuis \texttt{dbo.histo\_courbe\_taux} ;
+    \item tri des maturités de courbe et séparation court terme / long terme ;
+    \item interpolation linéaire lorsque la maturité d'un flux n'existe pas exactement dans la courbe ;
+    \item conversion des taux monétaires court terme ACT/360 en taux actuariels lorsque nécessaire ;
+    \item construction d'une courbe zéro-coupon par bootstrap pour l'échéancier annuel ;
+    \item valorisation par somme des flux futurs actualisés ;
+    \item prise en compte du spread d'émission comme prime de risque additive ;
+    \item calcul du coupon couru ;
+    \item distinction entre prix clean et prix dirty ;
+    \item gestion des obligations amortissables via l'échéancier ;
+    \item gestion des obligations in fine via la périodicité de remboursement ;
+    \item gestion des obligations révisables via \texttt{TYPE\_TAUX = REV} ;
+    \item calcul du rendement actuariel implicite par résolution numérique ;
+    \item calcul de la duration de Macaulay, de la duration modifiée, de la sensibilité et de la convexité.
+\end{itemize}
+
+\section{Ce qui n'est pas implémenté comme modèle théorique complet}
+
+Certains concepts financiers existent en théorie, mais ne sont pas modélisés comme des modules indépendants dans le code :
+
+\begin{itemize}
+    \item il n'y a pas de simulation stochastique des taux futurs pour les obligations variables ;
+    \item il n'y a pas de calibration automatique d'un spread de crédit à partir de prix de marché ;
+    \item il n'y a pas de modèle de risque de crédit ou de probabilité de défaut ;
+    \item l'obligation zéro-coupon comme produit séparé n'est pas isolée dans un workflow dédié ; en revanche, la courbe zéro-coupon et la valorisation par taux ZC existent ;
+    \item les modules ``gestion de portefeuille'' et ``gestion de risque'' sont prévus dans l'interface mais ne constituent pas encore des moteurs de calcul complets.
+\end{itemize}
+
+\section*{Conclusion}
+
+Le module de valorisation obligataire repose sur une logique financière classique : identifier les flux futurs, leur associer un taux d'actualisation issu de la courbe BAM ou de la courbe zéro-coupon, ajouter la prime de risque du titre, puis sommer les flux actualisés.
+
+La force du module est de relier directement cette logique aux données SQL Server : les caractéristiques viennent du référentiel, les flux viennent de l'échéancier, et les taux viennent de l'historique de courbe. Le calcul reste ainsi traçable, explicable devant un jury, et cohérent avec les données utilisées par l'application.
+
+\end{document}

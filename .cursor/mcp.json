@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "obligation-db": {
+      "command": "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "args": [
+        "${workspaceFolder}/scripts/custom_mssql_mcp.py"
+      ],
+      "env": {
+        "MSSQL_SERVER": "DESKTOP-5K88T8O\\SQLEXPRESS",
+        "MSSQL_DATABASE": "obligation",
+        "MSSQL_WINDOWS_AUTH": "true",
+        "MSSQL_DRIVER": "{ODBC Driver 17 for SQL Server}"
+      }
+    }
+  }
+}

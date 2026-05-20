@@ -1,0 +1,1903 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\dell\\Desktop\\pricer VERSION FINAL']
+INFO:     Uvicorn running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:     Started reloader process [13772] using WatchFiles
+INFO:     Started server process [8332]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8332]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [18684]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18684]
+INFO:     Started server process [15964]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15964]
+INFO:     Started server process [17336]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17336]
+INFO:     Started server process [11388]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11388]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [21776]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21776]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [11292]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11292]
+INFO:     Started server process [8160]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8160]
+INFO:     Started server process [15992]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15992]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [18720]
+INFO:     Waiting for application startup.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 79, in serve
+    await self._serve(sockets)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 94, in _serve
+    await self.startup(sockets=sockets)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 105, in startup
+    await self.lifespan.startup()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\lifespan\on.py", line 56, in startup
+    await self.startup_event.wait()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\locks.py", line 212, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 701, in lifespan
+    await receive()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+INFO:     Started server process [19968]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19968]
+INFO:     Started server process [14552]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'tests\test_rev_bond_pricing.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14552]
+INFO:     Started server process [18772]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18772]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [21276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21276]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [22308]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22308]
+INFO:     Started server process [20228]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20228]
+INFO:     Started server process [20060]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20060]
+INFO:     Started server process [4460]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4460]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [23452]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23452]
+INFO:     Started server process [19412]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19412]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [18656]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18656]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+Exception ignored in: <function BaseEventLoop.__del__ at 0x00000212A833E2A0>
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 725, in __del__
+    self.close()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 104, in close
+    self._close_self_pipe()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 111, in _close_self_pipe
+    self._remove_reader(self._ssock.fileno())
+                        ^^^^^^^^^^^
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_ssock'
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [15032]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15032]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [2620]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Task was destroyed but it is pending!
+task: <Task pending name='Task-1' coro=<Server.serve() done, defined at C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py:77> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-3' coro=<LifespanOn.main() running at C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\lifespan\on.py:86> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+GeneratorExit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 701, in lifespan
+    await receive()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\queues.py", line 160, in get
+    getter.cancel()  # Just in case getter is not done yet.
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 792, in call_soon
+    self._check_closed()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 539, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 706, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\logging.py", line 56, in formatMessage
+    recordcopy = copy(record)
+                 ^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\copy.py", line 87, in copy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+ImportError: sys.meta_path is None, Python is likely shutting down
+Call stack:
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 705, in lifespan
+    await send({"type": "lifespan.shutdown.failed", "message": exc_text})
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\lifespan\on.py", line 134, in send
+    self.logger.error(message["message"])
+Message: 'Traceback (most recent call last):\n  File "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\queues.py", line 158, in get\n    await getter\nGeneratorExit\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\starlette\\routing.py", line 701, in lifespan\n    await receive()\n  File "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\uvicorn\\lifespan\\on.py", line 137, in receive\n    return await self.receive_queue.get()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\queues.py", line 160, in get\n    getter.cancel()  # Just in case getter is not done yet.\n    ^^^^^^^^^^^^^^^\n  File "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\base_events.py", line 792, in call_soon\n    self._check_closed()\n  File "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\base_events.py", line 539, in _check_closed\n    raise RuntimeError(\'Event loop is closed\')\nRuntimeError: Event loop is closed\n'
+Arguments: ()
+INFO:     Started server process [14372]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14372]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [22944]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22944]
+INFO:     Started server process [5348]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5348]
+INFO:     Started server process [22668]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22668]
+INFO:     Started server process [20836]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20836]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [19672]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19672]
+INFO:     Started server process [16096]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16096]
+INFO:     Started server process [19064]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19064]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [15244]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15244]
+INFO:     Started server process [22848]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22848]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [18556]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_profile.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18556]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\verify_fpct_profile.py', 'scripts\debug_fpct_profile.py'. Reloading...
+INFO:     Started server process [18088]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18088]
+INFO:     Started server process [13404]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\verify_fpct_profile.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13404]
+WARNING:  WatchFiles detected changes in 'scripts\verify_fpct_profile.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [17672]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17672]
+WARNING:  WatchFiles detected changes in 'backend\main.py', 'obligation_amort_schedule.py', 'scripts\verify_fpct_profile.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [5820]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Échec de l\'ouverture de session de l\'utilisateur\xa0\'DESKTOP-5K88T8O\\dell\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d\'ouvrir la base de données "obligation" demandée par la connexion. La connexion a échoué. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0)')
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5820]
+INFO:     Started server process [5532]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5532]
+INFO:     Started server process [5816]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5816]
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_variants.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [11036]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_variants.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11036]
+INFO:     Started server process [17012]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_variants.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17012]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [16360]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16360]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [21472]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21472]
+INFO:     Started server process [10360]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_variants.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10360]
+INFO:     Started server process [21060]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_5116_main_table.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21060]
+INFO:     Started server process [16316]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16316]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [19748]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'pricing\curves\zc_interpolation_excel.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19748]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [16380]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_5116_main_table.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16380]
+INFO:     Started server process [11840]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\diagnostic_prix_manar_vs_wg.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11840]
+INFO:     Started server process [7228]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7228]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'backend\main.py'. Reloading...
+INFO:     Started server process [20508]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20508]
+INFO:     Started server process [11052]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'pricing\curves\zc_interpolation_excel.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11052]
+INFO:     Started server process [232]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [232]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Started server process [24300]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24300]
+INFO:     Started server process [3364]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3364]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [22664]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22664]
+INFO:     Started server process [17996]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17996]
+INFO:     Started server process [23788]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23788]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Started server process [17244]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17244]
+INFO:     Started server process [4048]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4048]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [15648]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15648]
+INFO:     Started server process [11000]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11000]
+INFO:     Started server process [16344]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16344]
+INFO:     Started server process [26100]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26100]
+INFO:     Started server process [26748]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26748]
+INFO:     Started server process [25256]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25256]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'backend\main.py', 'pricing\data_access.py'. Reloading...
+INFO:     Started server process [25436]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25436]
+INFO:     Started server process [27248]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27248]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [6612]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6612]
+INFO:     Started server process [17592]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17592]
+INFO:     Started server process [11540]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11540]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [2764]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2764]
+INFO:     Started server process [27496]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27496]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [26192]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26192]
+INFO:     Started server process [23252]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23252]
+INFO:     Started server process [21704]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21704]
+INFO:     Started server process [764]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [764]
+INFO:     Started server process [23276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23276]
+INFO:     Started server process [16768]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16768]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+Exception ignored in: <function BaseEventLoop.__del__ at 0x000002597C07E2A0>
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 725, in __del__
+    self.close()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 104, in close
+    self._close_self_pipe()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 111, in _close_self_pipe
+    self._remove_reader(self._ssock.fileno())
+                        ^^^^^^^^^^^
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_ssock'
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [19132]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19132]
+INFO:     Started server process [10048]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10048]
+INFO:     Started server process [23408]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\inspect_pricer_wg.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23408]
+WARNING:  WatchFiles detected changes in 'scripts\dump_block_pricer_wg.py', 'scripts\inspect_zc_sheet.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [22172]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\probe_interpoler_excel.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22172]
+INFO:     Started server process [26788]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\probe_interpoler_excel.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26788]
+INFO:     Started server process [26960]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\probe_interpoler_excel.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26960]
+INFO:     Started server process [6208]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\probe_interpoler_internal.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6208]
+INFO:     Started server process [21360]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21360]
+WARNING:  WatchFiles detected changes in 'scripts\check_5_codes.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [24632]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_5_codes_full_precision.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24632]
+WARNING:  WatchFiles detected changes in 'scripts\trace_9500.py', 'scripts\check_5_codes_full_precision.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [25852]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\trace_9500.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25852]
+WARNING:  WatchFiles detected changes in 'scripts\check_valuation_date.py', 'scripts\trace_9500_internal.py'. Reloading...
+INFO:     Started server process [22688]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22688]
+INFO:     Started server process [7460]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\find_excel_prices.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7460]
+WARNING:  WatchFiles detected changes in 'scripts\dump_9500_ammortissable.py', 'scripts\trace_9500.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [24764]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\dump_9500_formulas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24764]
+INFO:     Started server process [25984]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_categorie.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25984]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\check_categorie.py', 'scripts\trace_9500_internal.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [27024]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_echeancier_9500.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27024]
+INFO:     Started server process [23440]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_echeancier_9500.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23440]
+WARNING:  WatchFiles detected changes in 'scripts\check_echeancier_9500.py'. Reloading...
+Exception ignored in: <function BaseEventLoop.__del__ at 0x000001FEBB06E2A0>
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 725, in __del__
+    self.close()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 104, in close
+    self._close_self_pipe()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 111, in _close_self_pipe
+    self._remove_reader(self._ssock.fileno())
+                        ^^^^^^^^^^^
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_ssock'
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [22920]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22920]
+WARNING:  WatchFiles detected changes in 'scripts\check_echeancier_9351.py', 'obligation_amort_schedule.py', 'scripts\find_fec_holders.py', 'scripts\find_fec_in_amort.py', 'scripts\find_9351_anywhere.py', 'scripts\dump_9351_ammortissable.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [25668]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\dump_fec9149_9351.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25668]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [20172]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20172]
+INFO:     Started server process [20212]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20212]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\regression_all_codes.py', 'scripts\check_amort_pattern.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [17348]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17348]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+Exception ignored in: <function BaseEventLoop.__del__ at 0x000002342C3EE2A0>
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 725, in __del__
+    self.close()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 104, in close
+    self._close_self_pipe()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 111, in _close_self_pipe
+    self._remove_reader(self._ssock.fileno())
+                        ^^^^^^^^^^^
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_ssock'
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [21044]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\regression_all_codes.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21044]
+INFO:     Started server process [21632]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21632]
+INFO:     Started server process [15468]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15468]
+INFO:     Started server process [12464]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12464]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'backend\main.py'. Reloading...
+INFO:     Started server process [27616]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27616]
+INFO:     Started server process [5520]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5520]
+WARNING:  WatchFiles detected changes in 'scripts\dump_9500_formulas.py', 'scripts\trace_9500.py', 'scripts\probe_interpoler_excel.py', 'scripts\dump_9500_ammortissable.py', 'scripts\find_excel_prices.py', 'scripts\find_fec_holders.py', 'scripts\find_9351_anywhere.py', 'scripts\trace_9500_internal.py', 'scripts\regression_all_codes.py', 'scripts\check_5_codes.py', 'scripts\check_echeancier_9500.py', 'scripts\check_echeancier_9351.py', 'scripts\find_fec_in_amort.py', 'scripts\check_categorie.py', 'scripts\dump_9351_ammortissable.py', 'scripts\check_5_codes_full_precision.py', 'backend\main.py', 'scripts\dump_block_pricer_wg.py', 'scripts\inspect_pricer_wg.py', 'scripts\check_amort_pattern.py', 'scripts\probe_interpoler_internal.py', 'scripts\check_valuation_date.py', 'scripts\inspect_zc_sheet.py', 'scripts\dump_fec9149_9351.py'. Reloading...
+INFO:     Started server process [14576]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14576]
+INFO:     Started server process [4408]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4408]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [10848]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10848]
+INFO:     Started server process [15644]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'yield_curve.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15644]
+WARNING:  WatchFiles detected changes in 'backend\main.py', 'valuation_zc_obligations.py', 'yield_curve.py'. Reloading...
+INFO:     Started server process [7664]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7664]
+INFO:     Started server process [20332]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\compare_manar_ecarts_deux_dates.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20332]
+WARNING:  WatchFiles detected changes in 'scripts\compare_manar_ecarts_deux_dates.py'. Reloading...
+Exception ignored in: <function BaseEventLoop.__del__ at 0x000001D2EAA6E2A0>
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 725, in __del__
+    self.close()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 104, in close
+    self._close_self_pipe()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py", line 111, in _close_self_pipe
+    self._remove_reader(self._ssock.fileno())
+                        ^^^^^^^^^^^
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_ssock'
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+WARNING:  WatchFiles detected changes in 'scripts\diagnostic_prix_manar_vs_wg.py'. Reloading...
+INFO:     Started server process [25836]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25836]
+INFO:     Started server process [8104]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\compare_manar_ecarts_deux_dates.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8104]
+WARNING:  WatchFiles detected changes in 'scripts\compare_manar_ecarts_deux_dates.py'. Reloading...
+INFO:     Started server process [21940]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21940]
+INFO:     Started server process [22744]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22744]
+INFO:     Started server process [22436]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\diagnostic_deep_valo_codes.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22436]
+WARNING:  WatchFiles detected changes in 'scripts\diagnostic_deep_valo_codes.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [24696]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24696]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [20808]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20808]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\flux_diagnostic_bsf_fpct_export.py'. Reloading...
+INFO:     Started server process [2332]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2332]
+INFO:     Started server process [26872]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\build_diagnostic_flux_bsf_fpct_md.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26872]
+WARNING:  WatchFiles detected changes in 'scripts\build_diagnostic_flux_bsf_fpct_md.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [5988]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5988]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [16764]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16764]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\export_deep_compare_fpct.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [22164]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22164]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\flux_diagnostic_bsf_fpct_export.py', 'scripts\build_diagnostic_flux_bsf_fpct_md.py', 'scripts\build_analyse_ecarts_0603_vs_2603.py', 'scripts\export_deep_compare_fpct.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [15852]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15852]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\test_cashflow_boundary_fpct.py'. Reloading...
+INFO:     Started server process [4184]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4184]
+INFO:     Started server process [26336]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Lecture SQL impossible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 140, in read_sql_dataframe
+    rows = cursor.fetchall()
+           ^^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Mémoire disponible insuffisante dans le pool de mémoires tampons. (802) (SQLFetch)')
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_valo_201868.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26336]
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_valo_201868.py'. Reloading...
+INFO:     Started server process [8948]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de préconnexion (258)")
+WARNING:  WatchFiles detected changes in 'scripts\prix_manar_full_compare_dates.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8948]
+WARNING:  WatchFiles detected changes in 'scripts\prix_manar_full_compare_dates.py'. Reloading...
+INFO:     Started server process [23124]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23124]
+INFO:     Started server process [27076]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27076]
+WARNING:  WatchFiles detected changes in 'scripts\dump_9500_formulas.py', 'scripts\trace_9500.py', 'scripts\diagnostic_deep_valo_codes.py', 'scripts\compare_manar_ecarts_deux_dates.py', 'scripts\probe_interpoler_excel.py', 'scripts\dump_9500_ammortissable.py', 'scripts\test_cashflow_boundary_fpct.py', 'scripts\find_excel_prices.py', 'scripts\find_fec_holders.py', 'scripts\find_9351_anywhere.py', 'scripts\build_analyse_ecarts_0603_vs_2603.py', 'scripts\trace_9500_internal.py', 'scripts\check_5_codes.py', 'scripts\regression_all_codes.py', 'scripts\check_echeancier_9500.py', 'scripts\check_echeancier_9351.py', 'scripts\find_fec_in_amort.py', 'scripts\check_categorie.py', 'scripts\dump_9351_ammortissable.py', 'scripts\check_5_codes_full_precision.py', 'backend\main.py', 'scripts\dump_block_pricer_wg.py', 'scripts\inspect_pricer_wg.py', 'scripts\check_amort_pattern.py', 'scripts\probe_interpoler_internal.py', 'valuation_zc_obligations.py', 'scripts\check_valuation_date.py', 'scripts\diagnostic_prix_manar_vs_wg.py', 'yield_curve.py', 'scripts\inspect_zc_sheet.py', 'scripts\dump_fec9149_9351.py'. Reloading...
+INFO:     Started server process [14376]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14376]
+INFO:     Started server process [15624]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15624]
+WARNING:  WatchFiles detected changes in '_tmp_export_201868.py', 'scripts\dump_9500_formulas.py', 'scripts\trace_9500.py', 'scripts\diagnostic_deep_valo_codes.py', 'scripts\compare_manar_ecarts_deux_dates.py', 'scripts\probe_interpoler_excel.py', 'scripts\dump_9500_ammortissable.py', 'scripts\test_cashflow_boundary_fpct.py', 'scripts\find_excel_prices.py', 'scripts\find_fec_holders.py', 'scripts\find_9351_anywhere.py', 'scripts\build_analyse_ecarts_0603_vs_2603.py', 'scripts\trace_9500_internal.py', 'scripts\check_5_codes.py', 'scripts\regression_all_codes.py', 'scripts\check_echeancier_9500.py', 'scripts\check_echeancier_9351.py', 'scripts\find_fec_in_amort.py', 'scripts\check_categorie.py', 'scripts\dump_9351_ammortissable.py', 'scripts\check_5_codes_full_precision.py', 'backend\main.py', 'scripts\dump_block_pricer_wg.py', 'scripts\inspect_pricer_wg.py', 'scripts\check_amort_pattern.py', 'scripts\probe_interpoler_internal.py', 'valuation_zc_obligations.py', 'scripts\check_valuation_date.py', 'scripts\diagnostic_prix_manar_vs_wg.py', 'yield_curve.py', 'scripts\inspect_zc_sheet.py', 'scripts\dump_fec9149_9351.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [6180]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6180]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'pricing\debug_valorisation_trace.py', 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+INFO:     Started server process [23032]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23032]
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+INFO:     Started server process [23672]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23672]
+INFO:     Started server process [22944]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'pricing\debug_valorisation_trace.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22944]
+WARNING:  WatchFiles detected changes in 'pricing\debug_valorisation_trace.py', 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+INFO:     Started server process [17280]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17280]
+INFO:     Started server process [25940]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25940]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [4424]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4424]
+INFO:     Started server process [24820]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_valo_100954.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24820]
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_valo_100954.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [26688]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26688]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [8468]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_debug_201657.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8468]
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_debug_201657.py'. Reloading...
+INFO:     Started server process [21500]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21500]
+INFO:     Started server process [6984]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6984]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [26160]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26160]
+INFO:     Started server process [22964]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22964]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+Process SpawnProcess-186:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    async def serve(self, sockets: list[socket.socket] | None = None) -> None:
+asyncio.exceptions.CancelledError
+INFO:     Started server process [22544]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22544]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [16684]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16684]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [24008]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24008]
+INFO:     Started server process [3800]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3800]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [28380]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28380]
+INFO:     Started server process [28572]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28572]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+INFO:     Started server process [27168]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27168]
+INFO:     Started server process [24008]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24008]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [22928]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22928]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Started server process [9576]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9576]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Started server process [22356]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22356]
+INFO:     Started server process [27172]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27172]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'obligation_amort_schedule.py', 'backend\main.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [1848]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1848]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+INFO:     Started server process [3768]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3768]
+INFO:     Started server process [24600]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24600]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [27696]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27696]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [6740]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6740]
+INFO:     Started server process [5824]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5824]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [14536]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14536]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [22944]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22944]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [14824]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14824]
+INFO:     Started server process [3768]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3768]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+INFO:     Started server process [21992]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21992]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [20664]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20664]
+INFO:     Started server process [13800]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13800]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py:84: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Started server process [2436]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2436]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Started server process [17480]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17480]
+INFO:     Started server process [25904]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de préconnexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur DESKTOP-5K88T8O\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server indisponible
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 121, in sql_connection
+    raise last_exc or RuntimeError("Aucun serveur SQL candidat")
+  File "C:\Users\dell\Desktop\pricer VERSION FINAL\pricing\data_access.py", line 115, in sql_connection
+    conn = pyodbc.connect(cs)
+           ^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")
+Connexion SQL Server echouee sur localhost\SQLEXPRESS: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur de mémoire partagée : Erreur de délai d'attente [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Attribut de chaîne de connexion non valide (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Impossible de terminer le processus de connexion en raison d'un retard dans la réponse de connexion (258)")

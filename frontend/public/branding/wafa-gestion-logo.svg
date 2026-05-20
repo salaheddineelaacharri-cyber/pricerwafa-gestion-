@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" role="img" aria-label="Wafa Gestion">
+  <defs>
+    <linearGradient id="wgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="10" fill="url(#wgGrad)"/>
+  <path fill="#0f172a" d="M9 38 L15 14 L21 30 L28 16 L35 30 L41 14 L47 38 L42 38 L36 24 L28 34 L20 24 L14 38 Z"/>
+</svg>

@@ -1,0 +1,2231 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\dell\\Desktop\\pricer VERSION FINAL']
+INFO:     Uvicorn running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:     Started reloader process [7140] using WatchFiles
+INFO:     Started server process [22284]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+[pricer] Racine dépôt (reload) : C:\Users\dell\Desktop\pricer VERSION FINAL
+[pricer] CWD au lancement      : C:\Users\dell\Desktop\pricer VERSION FINAL
+[pricer] API sur http://127.0.0.1:800  (variable PRICER_API_PORT pour changer)
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22284]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-2:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [12084]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12084]
+WARNING:  WatchFiles detected changes in 'tests\test_rev_bond_pricing.py'. Reloading...
+ Process SpawnProcess-4:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [22172]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22172]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-6:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [16012]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16012]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-8:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [15560]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15560]
+INFO:     Started server process [6444]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6444]
+INFO:     Started server process [9380]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9380]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-12:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [16636]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16636]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-14:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [13248]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13248]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-16:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [21312]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21312]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-18:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [4520]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4520]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-20:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [15752]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15752]
+INFO:     Started server process [20124]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20124]
+INFO:     Started server process [17300]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17300]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-24:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [22740]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22740]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-26:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [20160]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_profile.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20160]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\debug_fpct_profile.py', 'scripts\verify_fpct_profile.py'. Reloading...
+ Process SpawnProcess-28:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [10352]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\verify_fpct_profile.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10352]
+WARNING:  WatchFiles detected changes in 'scripts\verify_fpct_profile.py'. Reloading...
+ Process SpawnProcess-30:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [22520]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22520]
+WARNING:  WatchFiles detected changes in 'scripts\verify_fpct_profile.py', 'obligation_amort_schedule.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-32:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [16192]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16192]
+INFO:     Started server process [1624]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1624]
+INFO:     Started server process [1388]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1388]
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_variants.py'. Reloading...
+ Process SpawnProcess-36:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [12080]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_variants.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12080]
+INFO:     Started server process [2752]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_variants.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2752]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Started server process [12324]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12324]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Started server process [21520]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21520]
+INFO:     Started server process [21900]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\debug_fpct_variants.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21900]
+INFO:     Started server process [14964]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_5116_main_table.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14964]
+INFO:     Started server process [23336]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23336]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-45:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [12168]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'pricing\curves\zc_interpolation_excel.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12168]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ Process SpawnProcess-47:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [20356]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_5116_main_table.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20356]
+INFO:     Started server process [7452]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\diagnostic_prix_manar_vs_wg.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7452]
+INFO:     Started server process [24416]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24416]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-51:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [20716]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'pricing\curves\zc_interpolation_excel.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20716]
+INFO:     Started server process [11812]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11812]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Started server process [21824]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21824]
+INFO:     Started server process [11472]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11472]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-56:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [20316]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20316]
+INFO:     Started server process [1948]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1948]
+INFO:     Started server process [20092]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20092]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Started server process [11000]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11000]
+INFO:     Started server process [19368]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19368]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ Process SpawnProcess-62:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [3508]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3508]
+INFO:     Started server process [19368]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19368]
+INFO:     Started server process [22848]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22848]
+INFO:     Started server process [21836]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21836]
+INFO:     Started server process [22940]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22940]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-68:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [25904]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'pricing\data_access.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25904]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-70:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [26092]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26092]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ Process SpawnProcess-72:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [20016]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20016]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Started server process [25696]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25696]
+INFO:     Started server process [1828]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1828]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Started server process [27468]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27468]
+INFO:     Started server process [14864]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14864]
+INFO:     Started server process [25956]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25956]
+INFO:     Started server process [27180]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27180]
+INFO:     Started server process [26552]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26552]
+INFO:     Started server process [15784]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15784]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-82:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [1624]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1624]
+INFO:     Started server process [9532]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\inspect_pricer_wg.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9532]
+WARNING:  WatchFiles detected changes in 'scripts\inspect_zc_sheet.py', 'scripts\dump_block_pricer_wg.py'. Reloading...
+ Process SpawnProcess-85:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [1144]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\probe_interpoler_excel.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1144]
+INFO:     Started server process [25228]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\probe_interpoler_excel.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25228]
+INFO:     Started server process [27616]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\probe_interpoler_excel.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27616]
+INFO:     Started server process [9896]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\probe_interpoler_internal.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9896]
+INFO:     Started server process [2464]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2464]
+WARNING:  WatchFiles detected changes in 'scripts\check_5_codes.py'. Reloading...
+ Process SpawnProcess-91:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [25700]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_5_codes_full_precision.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25700]
+WARNING:  WatchFiles detected changes in 'scripts\trace_9500.py', 'scripts\check_5_codes_full_precision.py'. Reloading...
+ Process SpawnProcess-93:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [22944]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\trace_9500.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22944]
+WARNING:  WatchFiles detected changes in 'scripts\check_valuation_date.py', 'scripts\trace_9500_internal.py'. Reloading...
+ Process SpawnProcess-95:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [11308]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\find_excel_prices.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11308]
+WARNING:  WatchFiles detected changes in 'scripts\trace_9500.py', 'scripts\dump_9500_ammortissable.py'. Reloading...
+ INFO:     Started server process [16420]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16420]
+INFO:     Started server process [23500]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\dump_9500_formulas.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23500]
+INFO:     Started server process [13520]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_categorie.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13520]
+WARNING:  WatchFiles detected changes in 'scripts\check_categorie.py', 'scripts\trace_9500_internal.py', 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-100:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [17956]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_echeancier_9500.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17956]
+INFO:     Started server process [15780]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\check_echeancier_9500.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15780]
+WARNING:  WatchFiles detected changes in 'scripts\check_echeancier_9500.py'. Reloading...
+ Process SpawnProcess-103:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [20516]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20516]
+WARNING:  WatchFiles detected changes in 'scripts\dump_9351_ammortissable.py', 'scripts\find_fec_in_amort.py', 'scripts\check_echeancier_9351.py', 'scripts\find_fec_holders.py', 'scripts\find_9351_anywhere.py', 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-105:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [20076]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\dump_fec9149_9351.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20076]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Started server process [18816]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18816]
+INFO:     Started server process [17820]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17820]
+WARNING:  WatchFiles detected changes in 'scripts\check_amort_pattern.py', 'scripts\regression_all_codes.py', 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-109:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [13888]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13888]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-111:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [17092]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\regression_all_codes.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17092]
+INFO:     Started server process [22924]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22924]
+INFO:     Started server process [25960]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25960]
+INFO:     Started server process [14924]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14924]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-116:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [11928]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11928]
+WARNING:  WatchFiles detected changes in 'scripts\dump_9500_formulas.py', 'scripts\find_fec_in_amort.py', 'scripts\check_echeancier_9351.py', 'scripts\find_excel_prices.py', 'scripts\find_9351_anywhere.py', 'scripts\check_echeancier_9500.py', 'scripts\check_amort_pattern.py', 'scripts\trace_9500.py', 'scripts\check_categorie.py', 'scripts\check_valuation_date.py', 'scripts\dump_fec9149_9351.py', 'scripts\check_5_codes_full_precision.py', 'scripts\dump_9500_ammortissable.py', 'scripts\probe_interpoler_internal.py', 'scripts\dump_9351_ammortissable.py', 'scripts\check_5_codes.py', 'scripts\regression_all_codes.py', 'scripts\find_fec_holders.py', 'scripts\inspect_zc_sheet.py', 'scripts\probe_interpoler_excel.py', 'scripts\dump_block_pricer_wg.py', 'scripts\trace_9500_internal.py', 'scripts\inspect_pricer_wg.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-118:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [25852]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25852]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Started server process [5988]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5988]
+INFO:     Started server process [11432]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'yield_curve.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11432]
+WARNING:  WatchFiles detected changes in 'scripts\compare_manar_ecarts_deux_dates.py', 'yield_curve.py', 'valuation_zc_obligations.py', 'scripts\diagnostic_prix_manar_vs_wg.py', 'backend\main.py'. Reloading...
+ INFO:     Started server process [18148]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18148]
+INFO:     Started server process [17128]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17128]
+INFO:     Started server process [3768]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\diagnostic_deep_valo_codes.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3768]
+WARNING:  WatchFiles detected changes in 'scripts\diagnostic_deep_valo_codes.py'. Reloading...
+ Process SpawnProcess-125:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [26760]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26760]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-127:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [26928]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26928]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\flux_diagnostic_bsf_fpct_export.py'. Reloading...
+ Process SpawnProcess-129:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [24120]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\build_diagnostic_flux_bsf_fpct_md.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24120]
+WARNING:  WatchFiles detected changes in 'scripts\build_diagnostic_flux_bsf_fpct_md.py'. Reloading...
+ Process SpawnProcess-131:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+WARNING:  WatchFiles detected changes in 'scripts\build_diagnostic_flux_bsf_fpct_md.py'. Reloading...
+ INFO:     Started server process [23124]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23124]
+WARNING:  WatchFiles detected changes in 'scripts\build_diagnostic_flux_bsf_fpct_md.py'. Reloading...
+ INFO:     Started server process [3160]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3160]
+WARNING:  WatchFiles detected changes in 'scripts\build_diagnostic_flux_bsf_fpct_md.py'. Reloading...
+ Process SpawnProcess-134:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [27540]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27540]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-136:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [23440]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23440]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'scripts\export_deep_compare_fpct.py'. Reloading...
+ Process SpawnProcess-138:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [24252]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24252]
+WARNING:  WatchFiles detected changes in 'scripts\build_analyse_ecarts_0603_vs_2603.py', 'obligation_amort_schedule.py', 'scripts\flux_diagnostic_bsf_fpct_export.py', 'scripts\export_deep_compare_fpct.py', 'scripts\build_diagnostic_flux_bsf_fpct_md.py'. Reloading...
+ Process SpawnProcess-140:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [25636]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25636]
+WARNING:  WatchFiles detected changes in 'scripts\test_cashflow_boundary_fpct.py', 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-142:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [26312]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_valo_201868.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26312]
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_valo_201868.py'. Reloading...
+ INFO:     Started server process [24064]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24064]
+INFO:     Started server process [18020]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\prix_manar_full_compare_dates.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18020]
+WARNING:  WatchFiles detected changes in 'scripts\prix_manar_full_compare_dates.py'. Reloading...
+ INFO:     Started server process [18212]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18212]
+INFO:     Started server process [17920]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17920]
+WARNING:  WatchFiles detected changes in 'scripts\dump_9500_formulas.py', 'scripts\inspect_pricer_wg.py', 'scripts\build_analyse_ecarts_0603_vs_2603.py', 'scripts\find_fec_in_amort.py', 'scripts\compare_manar_ecarts_deux_dates.py', 'scripts\check_echeancier_9351.py', 'scripts\find_excel_prices.py', 'scripts\find_9351_anywhere.py', 'scripts\test_cashflow_boundary_fpct.py', 'scripts\check_echeancier_9500.py', 'scripts\check_amort_pattern.py', 'scripts\trace_9500.py', 'yield_curve.py', 'scripts\check_categorie.py', 'scripts\check_valuation_date.py', 'scripts\dump_fec9149_9351.py', 'scripts\check_5_codes_full_precision.py', 'scripts\dump_9500_ammortissable.py', 'scripts\probe_interpoler_internal.py', 'scripts\dump_9351_ammortissable.py', 'scripts\diagnostic_deep_valo_codes.py', 'scripts\check_5_codes.py', 'scripts\regression_all_codes.py', 'scripts\find_fec_holders.py', 'scripts\inspect_zc_sheet.py', 'scripts\probe_interpoler_excel.py', 'scripts\dump_block_pricer_wg.py', 'valuation_zc_obligations.py', 'scripts\trace_9500_internal.py', 'scripts\diagnostic_prix_manar_vs_wg.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-148:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [2760]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2760]
+WARNING:  WatchFiles detected changes in 'scripts\dump_9500_formulas.py', '_tmp_export_201868.py', 'scripts\inspect_pricer_wg.py', 'scripts\build_analyse_ecarts_0603_vs_2603.py', 'scripts\find_fec_in_amort.py', 'scripts\compare_manar_ecarts_deux_dates.py', 'scripts\check_echeancier_9351.py', 'scripts\find_excel_prices.py', 'scripts\find_9351_anywhere.py', 'scripts\test_cashflow_boundary_fpct.py', 'scripts\check_echeancier_9500.py', 'scripts\check_amort_pattern.py', 'scripts\trace_9500.py', 'yield_curve.py', 'scripts\check_categorie.py', 'scripts\check_valuation_date.py', 'scripts\dump_fec9149_9351.py', 'scripts\check_5_codes_full_precision.py', 'scripts\dump_9500_ammortissable.py', 'scripts\probe_interpoler_internal.py', 'scripts\dump_9351_ammortissable.py', 'scripts\diagnostic_deep_valo_codes.py', 'valuation_zc_obligations.py', 'scripts\regression_all_codes.py', 'scripts\check_5_codes.py', 'scripts\find_fec_holders.py', 'scripts\inspect_zc_sheet.py', 'scripts\probe_interpoler_excel.py', 'scripts\dump_block_pricer_wg.py', 'scripts\trace_9500_internal.py', 'scripts\diagnostic_prix_manar_vs_wg.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-150:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [15376]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15376]
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py', 'pricing\debug_valorisation_trace.py', 'valuation_zc_obligations.py'. Reloading...
+ Process SpawnProcess-152:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+ INFO:     Started server process [5212]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5212]
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+ Process SpawnProcess-154:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+ Process SpawnProcess-155:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py'. Reloading...
+ INFO:     Started server process [24624]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24624]
+INFO:     Started server process [3756]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'pricing\debug_valorisation_trace.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3756]
+WARNING:  WatchFiles detected changes in 'scripts\debug_valorisation_ecarts_export.py', 'pricing\debug_valorisation_trace.py'. Reloading...
+ INFO:     Started server process [7132]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7132]
+INFO:     Started server process [17144]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17144]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-160:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [11756]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_valo_100954.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11756]
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_valo_100954.py'. Reloading...
+ Process SpawnProcess-162:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [2308]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2308]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-164:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 76, in subprocess_started
+    config.configure_logging()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\config.py", line 372, in configure_logging
+    logging.config.dictConfig(self.log_config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\logging\config.py", line 912, in dictConfig
+    dictConfigClass(config).configure()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\logging\config.py", line 557, in configure
+    formatters = config.get('formatters', EMPTY_DICT)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\logging\config.py", line 347, in get
+    def get(self, key, default=None):
+    
+KeyboardInterrupt
+INFO:     Started server process [21692]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_debug_201657.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21692]
+WARNING:  WatchFiles detected changes in 'scripts\_tmp_debug_201657.py'. Reloading...
+ INFO:     Started server process [27268]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27268]
+INFO:     Started server process [23488]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23488]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Started server process [21308]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21308]
+INFO:     Started server process [3508]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3508]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-170:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [22864]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22864]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-172:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [26684]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26684]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Started server process [2308]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2308]
+INFO:     Started server process [16968]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16968]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Started server process [26980]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26980]
+INFO:     Started server process [21136]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21136]
+INFO:     Started server process [26876]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26876]
+WARNING:  WatchFiles detected changes in 'backend\main.py'. Reloading...
+ INFO:     Started server process [8180]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8180]
+INFO:     Started server process [27640]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27640]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-181:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [12208]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12208]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Started server process [13744]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13744]
+INFO:     Started server process [26520]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26520]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ Process SpawnProcess-185:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [20932]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20932]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'obligation_amort_schedule.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-187:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [2792]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2792]
+WARNING:  WatchFiles detected changes in 'backend\main.py', 'valuation_zc_obligations.py'. Reloading...
+ Process SpawnProcess-189:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [15892]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15892]
+INFO:     Started server process [15548]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15548]
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-192:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [18196]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18196]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-194:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [16892]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'valuation_zc_obligations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16892]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-196:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [17492]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17492]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-198:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [23848]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23848]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py', 'valuation_zc_obligations.py', 'backend\main.py'. Reloading...
+ Process SpawnProcess-200:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [25228]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25228]
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ Process SpawnProcess-202:
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 73, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)  # pragma: full coverage
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 1037, in fdopen
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+INFO:     Started server process [6180]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'obligation_amort_schedule.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6180]
+INFO:     Started server process [19300]
+INFO:     Waiting for application startup.
+[pricer] backend.main.py chargé : C:\Users\dell\Desktop\pricer VERSION FINAL\backend\main.py
+[pricer] route OK : /api/pricer-meta enregistrée
+INFO:     Application startup complete.

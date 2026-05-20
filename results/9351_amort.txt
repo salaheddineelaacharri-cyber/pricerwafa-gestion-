@@ -1,0 +1,10 @@
+﻿python : C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\drawings.py:67: 
+UserWarning: wmf image format is not supported so the image is being dropped
+Au caractère C:\Users\dell\AppData\Local\Temp\ps-script-7ae7e240-0821-456e-bb66-9da959f0f294.ps1:82 : 1
++ python scripts\dump_9351_ammortissable.py 2>&1 | Out-File -Encoding U ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\dell\A...s being dropped:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  warn(msg)
+9351 introuvable

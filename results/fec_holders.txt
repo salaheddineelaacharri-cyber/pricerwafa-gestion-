@@ -1,0 +1,67 @@
+﻿python : C:\Users\dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\drawings.py:67: 
+UserWarning: wmf image format is not supported so the image is being dropped
+Au caractère C:\Users\dell\AppData\Local\Temp\ps-script-a3e7ea66-339d-427d-93e2-38e6b9785069.ps1:82 : 1
++ python scripts\find_fec_holders.py 2>&1 | Out-File -Encoding UTF8 res ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\dell\A...s being dropped:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  warn(msg)
+
+--- All Prix rows ---
+  Row 22: code=9371  Prix=0
+  Row 40: code=9461  Prix=34611.37302562859
+  Row 58: code=9396  Prix=40910.43036211353
+  Row 74: code=9345  Prix=20227.791210301413
+  Row 91: code=9346  Prix=20448.90320910667
+  Row 111: code=9387  Prix=0
+  Row 130: code=9394  Prix=108707.01903000001
+  Row 170: code=9395  Prix=61784.8143
+  Row 191: code=9402  Prix=61299.401963085416
+  Row 215: code=9424  Prix=75571.4673
+  Row 233: code=9431  Prix=20136.78
+  Row 252: code=9434  Prix=62.4896
+  Row 270: code=9436  Prix=98696.48920000001
+  Row 288: code=9452  Prix=51263.14339999999
+  Row 308: code=9437  Prix=98799.64980000001
+  Row 326: code=9372  Prix=55132.0626
+  Row 347: code=datetime.datetime(2020, 3, 31, 0, 0)  Prix=68298.254225
+  Row 366: code=9479  Prix=0
+  Row 384: code=9487  Prix=75765.34676966607
+  Row 404: code=9488  Prix=121704.9289
+  Row 423: code=9496  Prix=28502.2417
+  Row 441: code=9475  Prix=0
+  Row 465: code=9502  Prix=20420.2496
+  Row 485: code=9518  Prix=71573.4069
+  Row 508: code=9532  Prix=73708.0281
+  Row 531: code=5129  Prix=122074.36276999522
+  Row 549: code=9533  Prix=42363.607
+  Row 566: code=None  Prix=12601.236233909454
+  Row 585: code=None  Prix=351367016.4818
+  Row 603: code=5132  Prix=42369.666263235194
+  Row 620: code=None  Prix=351367016.4818
+  Row 639: code=9467  Prix=81417.48720000002
+  Row 657: code=9580  Prix=8342.705
+  Row 677: code=100925  Prix=33738.3154
+  Row 704: code=100937  Prix=69225.8109
+  Row 725: code=9626  Prix=104558.79089999999
+  Row 743: code=100948  Prix=77169.947
+  Row 762: code=5136  Prix=62380.7257
+  Row 781: code=9411  Prix=103014.78323646449
+  Row 803: code=9651  Prix=101096.3306
+  Row 822: code=9686  Prix=101609.7998
+  Row 840: code=9685  Prix=88261.26137
+  Row 858: code=100993  Prix=101089.8537
+  Row 876: code=100995  Prix=101114.6824
+  Row 895: code=9685  Prix=88274.46127
+  Row 913: code=9697  Prix=103848.3216
+  Row 933: code=9708  Prix=102018.9615
+  Row 952: code=9703  Prix=98971.47260000001
+  Row 973: code=9702  Prix=102079.07744
+  Row 993: code=9707  Prix=100569.29400000001
+  Row 1012: code=9714  Prix=100556.9119
+  Row 1031: code=101005  Prix=100111.9835
+  Row 1051: code=101006  Prix=100577.6813
+  Row 1071: code=9744  Prix=100643.6353
+  Row 1091: code=9500  Prix=98542.8764
+  Row 1111: code=9758  Prix=100635.73536
